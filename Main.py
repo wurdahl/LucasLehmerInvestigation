@@ -15,10 +15,10 @@ outputFile = open("output.txt","w")
 
 if __name__ == "__main__":
 
-    for i in range(3000):
+    for i in range(5000):
         if LucLehIsPrime(i):
             primeList.append(2**i - 1)
 
     outputFile.write(str(primeList));
     outputFile.write("\n")
-    outputFile.write(str(len(str(primeList[-1]))))
+    outputFile.write(str(len(str(primeList[-1])))+" Digits Long")
